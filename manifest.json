@@ -1,0 +1,21 @@
+{
+    "name": "Dallin Dunn Portfolio",
+    "short_name": "Dallin",
+    "description": "Personal Webpage for Dallin Dunn",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f8f9fa",
+    "theme_color": "#001f3f",
+    "icons": [
+        {
+            "src": "mephoto.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "mephoto.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

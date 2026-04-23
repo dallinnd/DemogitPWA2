@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallin Noah Dunn - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#001f3f">
+</head>
+<body>
+    <header>
+        <img src="mephoto.png" alt="Dallin Noah Dunn" class="profile-pic">
+        <h1>Dallin Noah Dunn</h1>
+        <p><a href="mailto:dallinnd@byu.edu" class="email-link">dallinnd@byu.edu</a></p>
+    </header>
+
+    <section class="bio-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a Chemical Engineering student at Brigham Young University with a strong passion for building and creating. Alongside my rigorous engineering coursework, I actively pursue graphic design and video editing as side hobbies. 
+            </p>
+            <p>
+                I enjoy bringing my technical and creative skills together, having recently developed two custom Progressive Web App (PWA) games that my family uses when we play our favorite tabletop games. This upcoming summer, I am excited to join Texas Instruments (TI) for a 3-month Process Engineering internship.
+            </p>
+        </div>
+    </section>
+
+    <section class="robotics-section">
+        <div class="container">
+            <h2>Robotics and Arduino Experience</h2>
+            <div class="video-gallery">
+                <iframe src="https://www.youtube.com/embed/JgUsRY4wJ-g" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/ilyzA2FqCA0" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/qBIbF6mee7M" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/9Yq1JynDxRo" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/6EG8U9WSn0A" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/pkyropYgub8" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>I love collaborating and sharing what I know. Feel free to reach out to me for:</p>
+            <ul class="services-list">
+                <li>Technology Purchase Advice</li>
+                <li>Graphic Design Help</li>
+                <li>Content Creation Assistance</li>
+            </ul>
+            <a href="mailto:dallinnd@byu.edu" class="cta-button">Reach Out</a>
+        </div>
+    </section>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker Registered!', reg))
+                    .catch(err => console.error('Service Worker Registration Failed!', err));
+            });
+        }
+    </script>
+</body>
+</html>
