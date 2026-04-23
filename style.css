@@ -7,6 +7,10 @@
     --accent: #4da6ff;
 }
 
+html {
+    overflow-y: scroll; /* Forces the scrollbar to always appear to prevent layout shifting */
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
