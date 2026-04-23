@@ -1,7 +1,9 @@
-const CACHE_NAME = 'dallin-portfolio-v1';
+const CACHE_NAME = 'dallin-portfolio-v2';
 const urlsToCache = [
   '/',
   '/index.html',
+  '/projects.html',
+  '/collaboration.html',
   '/style.css',
   '/manifest.json',
   '/mephoto.png'
@@ -15,6 +17,25 @@ self.addEventListener('install', event => {
         return cache.addAll(urlsToCache);
       })
   );
+  // Force the waiting service worker to become the active service worker
+  self.skipWaiting();
+});
+
+// Activate event to clear out old caches
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (cacheName !== CACHE_NAME) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+  // Ensure the service worker takes control immediately
+  self.clients.claim();
 });
 
 // Serve cached content when offline
