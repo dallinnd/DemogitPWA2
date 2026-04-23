@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallin Noah Dunn - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#001f3f">
+</head>
+<body>
+    <nav class="floating-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="collaboration.html" class="nav-link">Collaboration</a>
+    </nav>
+
+    <div class="page-title">
+        <h1>My Projects</h1>
+    </div>
+
+    <section class="robotics-section">
+        <div class="container">
+            <h2>Robotics and Arduino Experience</h2>
+            <div class="video-gallery">
+                <iframe src="https://www.youtube.com/embed/JgUsRY4wJ-g" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/ilyzA2FqCA0" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/qBIbF6mee7M" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/9Yq1JynDxRo" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/6EG8U9WSn0A" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/pkyropYgub8" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
