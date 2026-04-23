@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallin Noah Dunn - Collaboration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#001f3f">
+</head>
+<body>
+    <nav class="floating-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="collaboration.html" class="nav-link">Collaboration</a>
+    </nav>
+
+    <div class="page-title">
+        <h1>Collaboration</h1>
+    </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>I love collaborating and sharing what I know. Feel free to reach out to me for:</p>
+            <ul class="services-list">
+                <li><strong>Technology Purchase Advice:</strong> Finding the right hardware for your needs.</li>
+                <li><strong>Graphic Design Help:</strong> Branding, assets, and visual communication.</li>
+                <li><strong>Content Creation Assistance:</strong> Video editing and production workflows.</li>
+            </ul>
+            <a href="mailto:dallinnd@byu.edu" class="cta-button">Email Me</a>
+        </div>
+    </section>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
