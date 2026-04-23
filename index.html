@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dallin Noah Dunn - Portfolio</title>
+    <title>Dallin Noah Dunn - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#001f3f">
 </head>
 <body>
+    <nav class="floating-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="collaboration.html" class="nav-link">Collaboration</a>
+    </nav>
+
     <header>
         <img src="mephoto.png" alt="Dallin Noah Dunn" class="profile-pic">
         <h1>Dallin Noah Dunn</h1>
@@ -27,39 +33,21 @@
         </div>
     </section>
 
-    <section class="robotics-section">
+    <section class="previous-projects-section">
         <div class="container">
-            <h2>Robotics and Arduino Experience</h2>
-            <div class="video-gallery">
-                <iframe src="https://www.youtube.com/embed/JgUsRY4wJ-g" title="YouTube video player" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/ilyzA2FqCA0" title="YouTube video player" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/qBIbF6mee7M" title="YouTube video player" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/9Yq1JynDxRo" title="YouTube video player" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/6EG8U9WSn0A" title="YouTube video player" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/pkyropYgub8" title="YouTube video player" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-section">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <p>I love collaborating and sharing what I know. Feel free to reach out to me for:</p>
-            <ul class="services-list">
-                <li>Technology Purchase Advice</li>
-                <li>Graphic Design Help</li>
-                <li>Content Creation Assistance</li>
-            </ul>
-            <a href="mailto:dallinnd@byu.edu" class="cta-button">Reach Out</a>
+            <h2>Previous Projects</h2>
+            <p>
+                From coding custom web applications for family game nights to engineering hardware solutions using Arduino, my project history sits at the intersection of physical engineering and digital development.
+            </p>
+            <br>
+            <a href="projects.html" class="cta-button">View My Video Gallery</a>
         </div>
     </section>
 
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                    .then(reg => console.log('Service Worker Registered!', reg))
-                    .catch(err => console.error('Service Worker Registration Failed!', err));
+                navigator.serviceWorker.register('sw.js');
             });
         }
     </script>
