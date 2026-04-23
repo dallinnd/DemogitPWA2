@@ -273,3 +273,41 @@ iframe {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Navigation Button Grid (Home Page) --- */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.button-grid .cta-button {
+    width: 100%;
+    box-sizing: border-box;
+    /* Centers text if it wraps to multiple lines */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+/* --- Project Details List (Projects Page) --- */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Prevents the floating nav from covering the section title when anchored */
+.anchor-offset {
+    scroll-margin-top: 100px; 
+}
+
+/* Update Mobile Media Query */
+@media (max-width: 768px) {
+    .button-grid {
+        grid-template-columns: 1fr; /* Stacks buttons vertically */
+    }
+}
